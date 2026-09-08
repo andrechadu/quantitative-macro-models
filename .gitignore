@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Julia
+*.ji
+
+# Dynare / MATLAB
+*.asv
+*.log
+*.aux
+
+# Editors and operating system
+.vscode/
+.DS_Store
+Thumbs.db
