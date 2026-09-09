@@ -1,0 +1,20 @@
+# HANK: Fiscal and Monetary Policy
+
+This folder contains a Jupyter notebook with baseline fiscal and monetary-policy exercises in a HANK model, implemented with the Sequence-Space Jacobian (SSJ) toolkit.
+
+## Notebook
+
+- `04_hank_fiscal_monetary_baseline.ipynb`
+
+## Note
+
+The monetary-policy section is a discrete-time SSJ approximation inspired by Kaplan, Moll, and Violante (2018). It illustrates the main transmission channels but does not exactly replicate the paper’s continuous-time quantitative results.
+
+## Requirements
+
+```bash
+pip install sequence-jacobian numpy scipy matplotlib jupyter
+References
+- Kaplan, G., Moll, B., & Violante, G. L. (2018). Monetary Policy According to HANK. American Economic Review, 108(3), 697–743. Paper
+- Auclert, A., Bardóczy, B., Rognlie, M., & Straub, L. (2021). Using the Sequence-Space Jacobian to Solve and Estimate Heterogeneous-Agent Models. Econometrica, 89(5), 2375–2408.
+-  Martinez, T. R. *Advanced Macroeconomics — Problem Set 2: HANK fiscal and monetary policy*. Course material and Python code: https://tomasrm.github.io/teaching/advmacro/PSET2_blank.ipynb
