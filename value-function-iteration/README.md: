@@ -1,0 +1,40 @@
+# Value Function Iteration
+
+MATLAB implementations of value function iteration (VFI) for canonical dynamic economic problems.
+
+## Contents
+
+- `rck_vfi.m`  
+  Value function iteration for the Ramsey–Cass–Koopmans growth model with CRRA utility and Cobb–Douglas production.
+
+- `human_capital_vfi.m`  
+  Value function iteration for a growth model with human-capital accumulation and constrained capital dynamics.
+
+- `seller_unknown_w.m`  
+  Dynamic-pricing problem for a seller facing unknown demand. The model uses a homogeneity reduction and solves for the value function and optimal price policy.
+
+## Requirements
+
+The scripts require MATLAB. No external datasets or toolboxes are needed.
+
+## Usage
+
+Open MATLAB in this directory and run one of the scripts:
+
+```matlab
+rck_vfi
+```
+
+```matlab
+human_capital_vfi
+```
+
+```matlab
+seller_unknown_w
+```
+
+Each script performs value function iteration, reports convergence in the MATLAB Command Window, and generates figures for the value function and policy rule.
+
+## Author
+
+André Chadú
