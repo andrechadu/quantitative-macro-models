@@ -1,20 +1,25 @@
 # HANK: Fiscal and Monetary Policy
 
-This folder contains a Jupyter notebook with baseline fiscal and monetary-policy exercises in a HANK model, implemented with the Sequence-Space Jacobian (SSJ) toolkit.
+This directory contains Jupyter notebooks for studying fiscal and monetary policy in heterogeneous-agent New Keynesian (HANK) models with the [Sequence-Space Jacobian (SSJ)](https://doi.org/10.3982/ECTA17434) toolkit.
 
-## Notebook
+## Notebooks
 
-- `04_hank_fiscal_monetary_baseline.ipynb`
+- [`04_hank_fiscal_monetary_baseline.ipynb`](04_hank_fiscal_monetary_baseline.ipynb) — baseline, pedagogical fiscal- and monetary-policy exercises in a discrete-time SSJ HANK model. The notebook is useful for learning the core transmission mechanisms; its monetary-policy section is an approximation inspired by Kaplan, Moll, and Violante (2018), rather than a direct replication of their continuous-time quantitative results.
 
-## Note
-
-The monetary-policy section is a discrete-time SSJ approximation inspired by Kaplan, Moll, and Violante (2018). It illustrates the main transmission channels but does not exactly replicate the paper’s continuous-time quantitative results.
+- [`05_ars_2025_fiscal_monetary_hank.ipynb`](05_ars_2025_fiscal_monetary_hank.ipynb) — clean-room replication and teaching notebook for Auclert, Rognlie, and Straub (2025). It documents the canonical HANK model, its eight-block SSJ dependency graph, the HA calibration, iMPCs, wealth distribution, deficit-financed tax cuts, and monetary easing. The implementation follows the economic definitions, calibration, and public KMV inputs in the authors' official repository without importing its source modules.
 
 ## Requirements
 
 ```bash
 pip install sequence-jacobian numpy scipy matplotlib jupyter
-References
-- Kaplan, G., Moll, B., & Violante, G. L. (2018). Monetary Policy According to HANK. American Economic Review, 108(3), 697–743. Paper
-- Auclert, A., Bardóczy, B., Rognlie, M., & Straub, L. (2021). Using the Sequence-Space Jacobian to Solve and Estimate Heterogeneous-Agent Models. Econometrica, 89(5), 2375–2408.
--  Martinez, T. R. *Advanced Macroeconomics — Problem Set 2: HANK fiscal and monetary policy*. Course material and Python code: https://tomasrm.github.io/teaching/advmacro/PSET2_blank.ipynb
+```
+
+Run notebook cells in order. In the ARS notebook, run the package and HA-calibration cells before the fiscal general-equilibrium and monetary-policy cells.
+
+## References
+
+- Auclert, A., Rognlie, M., & Straub, L. (2025). *Fiscal and Monetary Policy with Heterogeneous Agents*. **Annual Review of Economics, 17**, 539–562. [DOI](https://doi.org/10.1146/annurev-economics-091624-044646).
+- Auclert, A., Rognlie, M., & Straub, L. (2025). *Official replication repository: annual-review*. [GitHub](https://github.com/shade-econ/annual-review).
+- Auclert, A., Bardóczy, B., Rognlie, M., & Straub, L. (2021). *Using the Sequence-Space Jacobian to Solve and Estimate Heterogeneous-Agent Models*. **Econometrica, 89**(5), 2375–2408. [DOI](https://doi.org/10.3982/ECTA17434).
+- Kaplan, G., Moll, B., & Violante, G. L. (2018). *Monetary Policy According to HANK*. **American Economic Review, 108**(3), 697–743. [DOI](https://doi.org/10.1257/aer.20160042).
+- Martinez, T. R. *Advanced Macroeconomics — Problem Set 2: HANK fiscal and monetary policy*. Course material and Python code. [Notebook](https://tomasrm.github.io/teaching/advmacro/PSET2_blank.ipynb).
